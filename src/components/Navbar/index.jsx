@@ -29,7 +29,7 @@ const Navbar = () => {
 
 	const navigate = useNavigate();
 	return (
-		<div className="navbar">
+		<nav className="navbar">
 			<div className="navbar-link">
 				<button className="navlink" onClick={() => navigate('/')}>
 					Home
@@ -80,7 +80,7 @@ const Navbar = () => {
 					Contact
 				</button>
 			</div>
-		</div>
+		</nav>
 	);
 };
 

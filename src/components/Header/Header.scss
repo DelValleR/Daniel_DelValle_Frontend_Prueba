@@ -1,0 +1,77 @@
+@use '../../utils/styles/variables.module.scss' as variables;
+@use '../../utils/styles/colors.module.scss' as colors;
+
+.header {
+	background-color: colors.$primary-color;
+	color: colors.$white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	padding-bottom: 10%;
+}
+
+.header-container {
+	text-align: left;
+	padding: 20px;
+}
+
+.banner-button {
+	background-color: colors.$secondary-color;
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: variables.$border-radius;
+	cursor: pointer;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.arrowbtn {
+	width: 20%;
+	align-self: center;
+}
+
+.banner-button:hover {
+	background-color: colors.$white;
+	color: colors.$primary-color;
+}
+
+.title {
+	font-weight: lighter;
+}
+
+@media screen and (min-width: variables.$mq-tablet) {
+	.banner-button {
+		width: 30%;
+		font-size: 20px;
+		margin-top: 80px;
+	}
+	.header-container {
+		padding: 40px 40px 0;
+	}
+}
+@media screen and (min-width: variables.$mq-desktop) {
+	.arrowbtn {
+		width: 15%;
+	}
+	.header-container {
+		margin-top: 15%;
+		padding: 0 10%;
+	}
+	.banner-button {
+		width: 20%;
+		padding: 0 20px;
+	}
+	.header {
+		padding-bottom: 5%;
+	}
+	.title {
+		font-size: 48px;
+	}
+}

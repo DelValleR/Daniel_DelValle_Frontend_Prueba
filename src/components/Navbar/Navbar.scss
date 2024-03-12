@@ -6,6 +6,7 @@
 	justify-content: space-evenly;
 	flex-direction: row;
 	background-color: colors.$primary-color;
+	width: 100%;
 }
 
 .navlink {
@@ -33,8 +34,6 @@
 	padding: 20px;
 	border-radius: variables.$border-radius;
 	position: absolute;
-	// width: 15%;
-	// top: 50%;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }

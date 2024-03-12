@@ -1,10 +1,10 @@
-import Navbar from '../../components/Navbar';
-import styles from './Home.module.scss';
+import Header from '../../components/Header';
+import styles from './Home.scss';
 
 const Home = () => {
 	return (
 		<div className={styles.App}>
-			<Navbar />
+			<Header />
 		</div>
 	);
 };
