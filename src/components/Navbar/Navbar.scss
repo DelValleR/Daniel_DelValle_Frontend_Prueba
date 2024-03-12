@@ -1,0 +1,57 @@
+@use '../../utils/styles/colors.module.scss' as colors;
+@use '../../utils/styles/variables.module.scss' as variables;
+
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	background-color: colors.$primary-color;
+}
+
+.navlink {
+	border: none;
+	background-color: transparent;
+	color: colors.$white;
+	transition: font-weight 0.3s;
+	padding: 5px;
+	&:hover {
+		font-weight: bold;
+		cursor: pointer;
+	}
+}
+
+.subnavlink {
+	width: 100%;
+	border-bottom: solid 1px colors.$white;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
+
+.submenu {
+	background-color: colors.$secondary-color;
+	padding: 20px;
+	border-radius: variables.$border-radius;
+	position: absolute;
+	// width: 15%;
+	// top: 50%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.items-submenu {
+	margin-left: 20px;
+}
+
+.arrow {
+	width: 20%;
+}
+
+.navbar-link {
+	flex-grow: 1;
+	flex-basis: min-content;
+}
+
+.menu {
+	position: relative;
+}
