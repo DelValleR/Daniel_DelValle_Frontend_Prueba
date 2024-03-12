@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import { string } from 'prop-types';
 import './Card.scss';
 
-export default function MediaCard({ image, title, text }) {
+export default function MediaCard({ img, title, content }) {
 	return (
 		<Card
 			sx={{
@@ -16,7 +16,7 @@ export default function MediaCard({ image, title, text }) {
 				padding: '20px',
 			}}
 		>
-			<img src={image} alt="placeholder" className="card-img" />
+			<img src={img} alt="placeholder" className="card-img" />
 
 			<CardContent sx={{ padding: '0' }}>
 				<Typography
@@ -30,7 +30,7 @@ export default function MediaCard({ image, title, text }) {
 					{title}
 				</Typography>
 				<Typography variant="body2" color="white" textAlign="left">
-					{text}
+					{content}
 				</Typography>
 			</CardContent>
 		</Card>
@@ -38,7 +38,7 @@ export default function MediaCard({ image, title, text }) {
 }
 
 MediaCard.propTypes = {
-	text: string,
+	content: string,
 	title: string,
-	image: string,
+	img: string,
 };

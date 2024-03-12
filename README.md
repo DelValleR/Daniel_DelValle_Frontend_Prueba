@@ -24,6 +24,14 @@ Para fines de la prueba se pensó en un MVP (Minimum Viable Product) con el func
 - La información del menú la trabajaría a traves de un objeto o archivo JSON que permitiera modificarse para no tener que hacer los cambios directamente en el componente.
 - Para el diseño responsive de la Navbar utilizaria un "Hamburguer Menu" que permitiera una mejor experiencia para el usuario.
 
+## Contenido
+
+- El contenido idealmente deberia ser manejado desde archivos JSON para hacer mas facil una posible integración con Base de Datos
+
+## Estilos
+
+- Se buscó seguir en la medida de lo posible el principio de mobile-first, sin embargo todavia se puede mejorar el responsive general de la aplicación.
+
 # Ejecutando el proyecto
 
 Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).

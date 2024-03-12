@@ -15,14 +15,15 @@ function Carousel() {
 	const isDesktop = useMediaQuery('(min-width:1024px)');
 	const isTablet = useMediaQuery('(min-width:768px)');
 	const cardsPerPage = isDesktop ? 4 : isTablet ? 2 : 1;
+	const cardInfo = {
+		img: placeholder,
+		title: 'Lorem Ipsum',
+		content:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu consectetur mi. Sed nunc enim, facilisis et rhoncus id, rutrum id turpis. Ut nec gravida dui, quis placerat massa. Aenean vitae nibh eu neque finibus luctus.',
+	};
 	// Este es un array de prueba para renderizar la misma card 10 veces
 	const duplicateCards = Array.from({ length: 10 }, (_, i) => (
-		<MediaCard
-			key={i}
-			image={placeholder}
-			title="Lorem Ipsum"
-			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu consectetur mi. Sed nunc enim, facilisis et rhoncus id, rutrum id turpis. Ut nec gravida dui, quis placerat massa. Aenean vitae nibh eu neque finibus luctus."
-		/>
+		<MediaCard key={i} img={cardInfo.img} title={cardInfo.title} content={cardInfo.content} />
 	));
 
 	const handleNextPage = () => {

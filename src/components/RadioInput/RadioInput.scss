@@ -8,7 +8,6 @@
 	display: flex;
 	flex-direction: column;
 	border-radius: 12px;
-	width: 100%;
 	height: auto;
 	flex-grow: 1;
 	justify-content: center;
@@ -23,4 +22,9 @@
 .radio-item {
 	display: flex;
 	padding: 5%;
+}
+@media screen and (min-width: variables.$mq-desktop) {
+	.radio-input {
+		width: 100%;
+	}
 }

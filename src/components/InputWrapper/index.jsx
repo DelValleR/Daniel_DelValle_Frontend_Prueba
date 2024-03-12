@@ -11,23 +11,14 @@ const InputWrapper = () => {
 		setSelectedOption(option);
 	};
 
-	const [selectedValue, setSelectedValue] = useState('');
+	const [selectedOptions, setSelectedOptions] = useState([]);
 
-	const handleChange = (event) => {
-		setSelectedValue(event.target.value);
+	const handleSelectChange = (options) => {
+		setSelectedOptions(options);
 	};
 	return (
 		<div className="wrapper">
-			<SelectInput
-				options={[
-					{ label: 'Opción 1', value: 'opcion1' },
-					{ label: 'Opción 2', value: 'opcion2' },
-					{ label: 'Opción 3', value: 'opcion3' },
-					{ label: 'Opción 4', value: 'opcion4' },
-				]}
-				value={selectedValue}
-				onChange={handleChange}
-			/>
+			<SelectInput options={['Option 1', 'Option 2', 'Option 3']} onChange={handleSelectChange} />
 			<RadioInput
 				idPrefix="options"
 				options={['Opción 1', 'Opción 2', 'Opción 3', 'Opción 4']}

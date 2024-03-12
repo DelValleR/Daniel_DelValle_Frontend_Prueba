@@ -2,19 +2,39 @@
 @use '../../utils/styles/variables.module.scss' as variables;
 
 .select-input {
-	width: 100%;
+	width: 90%;
 	padding: 8px;
-	border-radius: 4px;
 	flex-grow: 1;
+	border-radius: variables.$border-radius;
 }
 
 .select-option {
-	width: 50%;
+	width: 90%;
 	height: auto;
+	background-color: colors.$primary-color;
+	border-radius: variables.$border-radius;
+	padding: 10px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	margin: 14px;
 }
 
 .options {
 	margin: 10px;
-	background-color: colors.$primary-color;
 	color: colors.$white;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.options input[type='checkbox'] {
+	margin-right: 5px;
+	width: unset;
+}
+
+.select {
+	width: 100%;
+	padding: 10px;
+	flex-grow: 1;
 }

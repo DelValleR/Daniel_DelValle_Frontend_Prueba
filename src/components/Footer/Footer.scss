@@ -1,0 +1,46 @@
+@use '../../utils/styles/colors.module.scss' as colors;
+@use '../../utils/styles/variables.module.scss' as variables;
+
+.footer {
+	background-color: colors.$primary-color;
+	color: colors.$white;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.columns {
+	display: flex;
+	flex-direction: column;
+}
+
+.column {
+	flex: 1;
+	margin-right: 20px;
+}
+
+.column:last-child {
+	margin-right: 0;
+}
+
+.paragraph {
+	font-size: 14px;
+	margin: 0;
+}
+
+.link {
+	margin-top: 20px;
+}
+
+.link p {
+	font-style: italic;
+}
+
+.anchor {
+	color: colors.$white;
+}
+
+@media screen and (min-width: variables.$mq-desktop) {
+	.columns {
+		flex-direction: row;
+	}
+}
