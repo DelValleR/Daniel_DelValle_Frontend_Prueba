@@ -1,0 +1,28 @@
+@use '../../utils/styles/variables.module.scss' as variables;
+@use '../../utils/styles/colors.module.scss' as colors;
+
+.banner {
+	background-color: colors.$secondary-color;
+	color: colors.$white;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.animation {
+	width: 300px;
+	height: 200px;
+	animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(50px);
+	}
+	to {
+		transform: translateY(-40px);
+	}
+}

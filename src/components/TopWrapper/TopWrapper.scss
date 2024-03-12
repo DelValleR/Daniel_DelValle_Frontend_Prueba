@@ -1,0 +1,14 @@
+@use '../../utils/styles/variables.module.scss' as variables;
+@use '../../utils/styles/colors.module.scss' as colors;
+
+.top-wrapper {
+	display: grid;
+	height: 80vh;
+}
+
+@media screen and (min-width: variables.$mq-desktop) {
+	.top-wrapper {
+		grid-template-columns: 3fr 1fr;
+		height: 100%;
+	}
+}

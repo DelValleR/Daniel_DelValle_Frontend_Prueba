@@ -32,6 +32,7 @@
 .submenu {
 	background-color: colors.$secondary-color;
 	padding: 20px;
+	width: 100%;
 	border-radius: variables.$border-radius;
 	position: absolute;
 	left: 50%;
@@ -53,4 +54,15 @@
 
 .menu {
 	position: relative;
+}
+
+@media screen and (min-width: variables.$mq-tablet) {
+	.arrow {
+		width: 15%;
+	}
+}
+@media screen and (min-width: variables.$mq-desktop) {
+	.arrow {
+		width: 10%;
+	}
 }
