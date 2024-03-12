@@ -1,9 +1,9 @@
-import './App.css';
+import styles from './Home.module.scss';
 
 const Home = () => {
 	return (
-		<div className="App">
-			<header className="App-header">
+		<div className={styles.App}>
+			<header className={styles['App-header']}>
 				<p>
 					Edit <code>src/App.js</code> and save to reload.
 				</p>
