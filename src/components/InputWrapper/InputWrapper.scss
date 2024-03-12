@@ -1,0 +1,15 @@
+@use '../../utils/styles/colors.module.scss' as colors;
+@use '../../utils/styles/variables.module.scss' as variables;
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: colors.$accent-color;
+	width: 100%;
+}
+@media screen and (min-width: variables.$mq-desktop) {
+	.wrapper {
+		flex-direction: row;
+		// justify-content: space-evenly;
+	}
+}

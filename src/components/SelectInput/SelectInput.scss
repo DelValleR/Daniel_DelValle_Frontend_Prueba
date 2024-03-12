@@ -1,0 +1,20 @@
+@use '../../utils/styles/colors.module.scss' as colors;
+@use '../../utils/styles/variables.module.scss' as variables;
+
+.select-input {
+	width: 100%;
+	padding: 8px;
+	border-radius: 4px;
+	flex-grow: 1;
+}
+
+.select-option {
+	width: 50%;
+	height: auto;
+}
+
+.options {
+	margin: 10px;
+	background-color: colors.$primary-color;
+	color: colors.$white;
+}
