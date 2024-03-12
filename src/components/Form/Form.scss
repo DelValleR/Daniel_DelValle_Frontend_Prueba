@@ -1,0 +1,53 @@
+@use '../../utils/styles/colors.module.scss' as colors;
+@use '../../utils/styles/variables.module.scss' as variables;
+
+.formulario-container {
+	padding: 20px;
+}
+
+.input-group {
+	margin-bottom: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input {
+	width: 100%;
+	padding: 8px;
+	border-radius: 8px;
+	border: 1px solid colors.$primary-color;
+}
+textarea {
+	width: 100%;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: colors.$primary-color;
+	color: colors.$white;
+	height: 100px;
+	border-radius: variables.$border-radius;
+}
+
+button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: colors.$secondary-color;
+	color: colors.$white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: colors.$primary-color;
+}
+
+.resultado-container {
+	margin-top: 20px;
+}
