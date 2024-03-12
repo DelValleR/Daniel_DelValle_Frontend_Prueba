@@ -1,0 +1,24 @@
+@use '../../utils/styles/colors.module.scss' as colors;
+@use '../../utils/styles/variables.module.scss' as variables;
+
+.radio-input {
+	margin-bottom: 10px;
+	background-color: colors.$primary-color;
+	color: colors.$white;
+	display: flex;
+	flex-direction: column;
+	padding: 10%;
+	border-radius: 12px;
+}
+
+.radio-input input[type='radio'] {
+	margin-right: 5px;
+	width: 10%;
+}
+
+.radio-item {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 20%;
+	padding: 5%;
+}
